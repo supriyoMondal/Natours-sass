@@ -33,6 +33,18 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 112.5em) {
+    html {
+      font-size: 65%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 35%; } }
 
 body {
   font-family: 'Lato' ,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -451,6 +463,9 @@ body {
   .popup:target {
     opacity: 1;
     visibility: visible; }
+  .popup:target .popup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
   .popup__close {
     color: #333; }
     .popup__close:link, .popup__close:visited {
@@ -469,11 +484,12 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
     border-radius: 2px;
     display: table;
-    overflow: hidden; }
+    overflow: hidden;
+    transform: translate(-50%, -50%) scale(0.3);
+    transition: all .4s; }
   .popup__left {
     width: 33.333333%;
     display: table-cell; }
