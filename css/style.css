@@ -414,6 +414,9 @@ body {
   font-size: 1.6rem;
   transform: skewX(-10deg);
   background: #fff; }
+  @media (max-width: 56.25em) {
+    .story {
+      width: 100%; } }
   .story > * {
     transform: skewX(10deg); }
   .story__shape {
@@ -859,9 +862,14 @@ body {
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("../../img/nat-10.jpg");
   background-size: cover;
-  height: 50rem;
   border-radius: 3px;
   box-shadow: 0 1.4rem 3rem rgba(0, 0, 0, 0.3); }
+  @media (max-width: 56.25em) {
+    .book {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url("../../img/nat-10.jpg"); } }
   .book__form {
     width: 50%;
     padding: 3rem; }
+    @media (max-width: 56.25em) {
+      .book__form {
+        width: 65%; } }

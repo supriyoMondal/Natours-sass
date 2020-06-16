@@ -6,6 +6,9 @@
     font-size: 1.6rem;
     transform: skewX(-10deg);
     background: #fff;
+    @include respond(tab-port){
+        width: 100%;
+    }
     & > * {
         transform: skewX(10deg) ;   
     }
