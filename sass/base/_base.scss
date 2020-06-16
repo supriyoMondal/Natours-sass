@@ -30,4 +30,7 @@ body{
     color: $color-grey-text;
     padding: 2rem;
     box-sizing: border-box;
+    @include respond(tab-port){
+       padding: 0;
+    }
 }
